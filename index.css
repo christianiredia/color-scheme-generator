@@ -1,101 +1,93 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+html,
 body {
   margin: 0;
-  padding: 0;
   font-family: "Inter", sans-serif;
-}
-
-.container {
+  font-size: 12px;
   width: 550px;
-  height: 460px;
-  background-color: aqua;
-  display: flex;
-  flex-direction: column;
 }
 
 .header-container {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 90px;
+  justify-content: space-evenly;
   width: 100%;
-  background-color: white;
-  box-shadow: 0px 4px 11px 0px #00000026;
 }
 
-header input {
-  height: 42px;
-  width: 61px;
+#color-pick,
+#input-scheme {
+  margin: 1rem;
 }
 
-header select {
-  height: 42px;
+#color-pick {
+  padding: 0;
+  border: 0px;
+  position: absolute;
+  width: 51px;
+  height: 34px;
+  left: 19px;
+  top: 27px;
+}
+
+#input-scheme {
+  font-size: 1.4rem;
+  padding: 0.5rem;
+  border-radius: 6px;
+  font-weight: 400;
+  border: 1px solid #d1d5db;
   width: 312px;
-  border-radius: 7.5px;
-  border: 1px solid #d1d5db;
-}
-
-header button {
   height: 42px;
-  width: 123px;
-  border-radius: 5px;
-  border: 1px solid #d1d5db;
-  color: black;
-  background: white;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  position: absolute;
+  width: 312px;
+  height: 42px;
+  left: 87px;
+  top: 23px;
 }
 
-main {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin: 0;
+#color-pick:hover {
+  box-shadow: 4px 4px 10px whitesmoke;
+}
+
+#input-scheme:hover {
+  box-shadow: 4px 4px 10px whitesmoke;
 }
 
 .main-container {
+  width: 550px;
+  height: 60vh;
+  max-height: 80%;
   display: flex;
-}
-
-.main-color {
-  height: 350px;
-  width: 110px;
+  border: none;
+  padding: 0;
 }
 
 .footer-container {
   display: flex;
-  justify-content: center;
-  box-shadow: 0px 4px 11px 0px #00000026;
+  border: none;
+  padding: 0;
 }
 
-.footer-color {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 110px;
-  height: 46px;
-  background-color: white;
+.color-1,
+.color-2,
+.color-3,
+.color-4,
+.color-5 {
+  background-color: #eee;
+  width: 20%;
+  height: 100%;
 }
 
-.color1 {
-  background-color: #f55a5a;
-}
-
-.color2 {
-  background-color: #2b283a;
-}
-
-.color3 {
-  background-color: #fbf3ab;
-}
-
-.color4 {
-  background-color: #aad1b6;
-}
-
-.color5 {
-  background-color: #a626d3;
-}
-
-button {
-  cursor: pointer;
+.color-hex1,
+.color-hex2,
+.color-hex3,
+.color-hex4,
+.color-hex5 {
+  background-color: #bbb;
+  width: 20%;
+  padding: 10px 0;
+  border: 1px solid #999;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.1rem;
 }
