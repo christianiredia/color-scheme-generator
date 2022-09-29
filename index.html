@@ -9,32 +9,36 @@
     <link rel="stylesheet" href="reset.css" />
   </head>
   <body>
-    <div class="container">
-      <header>
-        <div class="header-container">
-          <input type="color" />
-          <select name="pick-color" id="pick-color"></select>
-          <button class="color-scheme">Get color scheme</button>
+    <div class="header-container">
+      <form>
+        <div>
+          <input id="color-pick" type="color" value="#ff0000" />
         </div>
-      </header>
-      <main>
-        <div class="main-container">
-          <div class="main-color color1"></div>
-          <div class="main-color color2"></div>
-          <div class="main-color color3"></div>
-          <div class="main-color color4"></div>
-          <div class="main-color color5"></div>
+        <div>
+          <select name="input-scheme" id="input-scheme">
+            <option value="monochrome">Monochrome</option>
+            <option value="monochrome-dark">Monochrome-dark</option>
+            <option value="analogic">Analogic</option>
+            <option value="complement">Complement</option>
+            <option value="analogic-complement">Analogic-complement</option>
+            <option value="triad">Triad</option>
+          </select>
         </div>
-      </main>
-      <footer>
-        <div class="footer-container">
-          <div class="footer-color color-hex1">#F55A5A</div>
-          <div class="footer-color color-hex2">#2B283A</div>
-          <div class="footer-color color-hex3">#FBF3AB</div>
-          <div class="footer-color color-hex4">#AAD1B6</div>
-          <div class="footer-color color-hex5">#A626D3</div>
-        </div>
-      </footer>
+      </form>
+    </div>
+    <div class="main-container">
+      <div class="main-color color-1"></div>
+      <div class="main-color color-2"></div>
+      <div class="main-color color-3"></div>
+      <div class="main-color color-4"></div>
+      <div class="main-color color-5"></div>
+    </div>
+    <div class="footer-container">
+      <div class="footer-color color-hex1">#F55A5A</div>
+      <div class="footer-color color-hex2">#2B283A</div>
+      <div class="footer-color color-hex3">#FBF3AB</div>
+      <div class="footer-color color-hex4">#AAD1B6</div>
+      <div class="footer-color color-hex5">#A626D3</div>
     </div>
 
     <script src="index.js"></script>
